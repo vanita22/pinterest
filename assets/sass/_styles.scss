@@ -75,7 +75,129 @@ body{
 	font-family:'Source Sans Pro', sans-serif;
 }
 
+.menu{
+	width: 100%;
+	height: 4vh;
+	top: 0;
+	background-color: white;
+	border-bottom: 2px solid #B9B4B7;
+	position: fixed;
+	z-index: 1;
+	padding: 20px;
+	display: inline-flex;	
+	img{
+		width: 25px;
+		height: 25px;
+		margin-right: 10px;
+	}
+	img:hover{
+		background-color: #e7e7e7;
+		padding: 8px;
+		border-radius: 100px;
+	}
+	h4{
+		margin-top: 6px;
+		color: #959595;
+	}
+	.buscador{
+		width: 80%;
+		display: inline-block;		
+		input{
+			background-color: #e7e7e7;
+			color: #959595;
+			background-image: url(../img/search.png);
+			background-repeat: no-repeat;
+			background-size: 17px;
+			padding-left: 60px;
+			border-style: none;
+			margin-left: 5%;
+			width: 60%;
+			padding: 7px;
+			display: inline-block;
+		}
+		span{
+			background-color: #e7e7e7;
+			padding: 5.4px;
+			display: inline-block;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		select{
+			padding: 5.7px;
+			margin-left: -5px;
+			border-style: none;
+			border-left: 1px solid #959595;
+		}
+	}
+	.seccion{
+		margin-left:-6%;
+		display: inline-flex;
+		p{
+			font-size: 17px;
+			margin-top: 4px;
+		}
+		.hambur{
+			img{
+				margin-left: 40px;
+				width: 35px;
+				height: 40px;
+				margin-top: -6px;
+				cursor: pointer;
+			}
+			.lista{
+				background-color: white;
+				border: 1px solid #959595;
+				border-radius: 10px;
+				width: auto;
+				height: auto;
+				padding: 20px;
+				li{
+					list-style: none;
+					margin-left: -30px;
+					cursor: pointer;
+					a{
+						text-decoration: none;
+						color: #959595;
+					}
+					a:hover{
+						background-color: #e7e7e7; 
+						color: white;
+						font-weight: bold;
+					}
+				}
+				.close{
+					cursor: pointer;
+					float: right;
+					margin-top: 5px;
+					background-color: #959595;
+					color: white;
+					padding: 5px;
+					border-radius: 100px;
+				}
+			}
+		}
+	}
+}
+
+/*Botones pinteres*/
+
+.list-btn{
+	display: inline-flex;
+	width: 100%;
+	button{
+		background-color: brown;
+		color: white;
+		font-size: 15px;
+		width: auto;
+		height: auto;
+		padding: 10px;
+		border-radius: 15px;
+	}
+}
+
+/*imagenes pinteres*/
 .caja{
+	margin-top: 100px;
 	display: inline-flex;
 	padding: 0px 100px;
 	position: relative;
