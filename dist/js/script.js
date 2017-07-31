@@ -10285,10 +10285,9 @@ $(document).ready(function(){
 	})
 
 	$(".close").click(function(){
-		$(".lista").hide(1000);
-	})
-
-	        
+		$(".lista").hide(300);
+	})       
+        
 
     /*FUNCIONAMIENTO DEL MODAL*/
 
@@ -10301,11 +10300,9 @@ $(document).ready(function(){
 
 	$(".open").click(function(){
 		$(".modal").show(300);
-		$("#modal-b").append("<div class='dat[i].id'>" + "<h4>" + dat.slice(i,[i]).title + "</h4>" + "<img src=dist/img/"+ dat.slice(i,[i]).image_url + ">" + "</div>");
-		$("#modal-c").append("<div class='dat[i].id'>" + "<div><h3>M</h3><p>" + dat.slice(i,[i]).user+"</p><h2>#"+dat.slice(i,[i]).hashtag + "</h2></div>" + "<h5>" + dat.slice(i,[i]).description + "</h5>" + "</div>");
+		$("#modal-b").append("<div class='dat[i].id'>" + "<h4>" + dat[i].title + "</h4>" + "<img src=dist/img/"+ dat[i].image_url + ">" + "</div>");
+		$("#modal-c").append("<div class='dat[i].id'>" + "<div><h3>M</h3><p>" + dat[i].user+"</p><h2>#"+dat[i].hashtag + "</h2></div>" + "<h5>" + dat[i].description + "</h5>" + "</div>");
 	})
-
-
 })
 
 
