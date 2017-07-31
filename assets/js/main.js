@@ -26,17 +26,12 @@ $(document).ready(function(){
 	$(".lista").hide();
 	
 	$(".hambur").click(function(){
-		$(".lista").show(300);
+		$(".lista").show();
 	})
 
 	$(".close").click(function(){
-		$(".lista").hide(1000);
-	})
-
-		  
-    /*movimiento del los botones*/ 
-
-       
+		$(".lista").hide();
+	})       
         
 
     /*FUNCIONAMIENTO DEL MODAL*/
@@ -53,6 +48,10 @@ $(document).ready(function(){
 		$("#modal-b").append("<div class='dat[i].id'>" + "<h4>" + dat[i].title + "</h4>" + "<img src=dist/img/"+ dat[i].image_url + ">" + "</div>");
 		$("#modal-c").append("<div class='dat[i].id'>" + "<div><h3>M</h3><p>" + dat[i].user+"</p><h2>#"+dat[i].hashtag + "</h2></div>" + "<h5>" + dat[i].description + "</h5>" + "</div>");
 	})
+
+	/*$("#buscar").click(function(){
+		$(".resultado").append("#busqueda");
+	})*/ no funcionó...
 })
 
 

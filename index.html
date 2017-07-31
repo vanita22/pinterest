@@ -14,13 +14,15 @@
 		<img src="dist/img/Pinterest.png">
 		<h4>Inicio</h4>
 		<div class="buscador">
-			<div class="search">🔎</div><input type="text" name="" id="busqueda"><span class="cerrar">x</span>
+		<form action="https://www.pinterest.com/search" method="get">
+			<div class="search">🔎</div><input type="text" name="" id="busqueda"><input type="submit" value="buscar" id="buscar"><span class="cerrar">x</span>
 			<select>
 				<option value="1" selected="selected">Todos los Pines</option>
 				<option value="2">Populares</option>
 				<option value="3">Regalos</option>
 				<option value="4">Aire libre</option>
 			</select>
+		</form>
 		</div>
 
 		<div class="seccion">
