@@ -10285,18 +10285,14 @@ $(document).ready(function(){
 	})
 
 	$(".close").click(function(){
-		$(".lista").hide(300);
+		$(".lista").hide(1000);
 	})
 
+		  
+    /*movimiento del los botones*/ 
 
-	  /*<button id="right">&raquo;</button>
-        <div class="block"></div>
- 
-        <script>
-        $("#right").click(function(){
-          $(".block").animate({"left": "+=1500px"}, "slow");
-        });
-        </script>*/
+       
+        
 
     /*FUNCIONAMIENTO DEL MODAL*/
 
@@ -10309,8 +10305,8 @@ $(document).ready(function(){
 
 	$(".open").click(function(){
 		$(".modal").show(300);
-		$("#modal-b").append("<div class='dat[i].id'>" + "<h4>" + dat[i].title + "</h4>" + "<img src=dist/img/"+ dat[i].image_url + ">" + "</div>" +"<br>");
-		$("#modal-c").append("<div class='dat[i].id'>" + "<div><h3>M</h3><p>" + dat[i].user+"</p><h2>#"+dat[i].hashtag + "</h2></div>" + "<h5>" + dat[i].description + "</h5>" + "</div>" +"<br>");
+		$("#modal-b").append("<div class='dat[i].id'>" + "<h4>" + dat[i].title + "</h4>" + "<img src=dist/img/"+ dat[i].image_url + ">" + "</div>");
+		$("#modal-c").append("<div class='dat[i].id'>" + "<div><h3>M</h3><p>" + dat[i].user+"</p><h2>#"+dat[i].hashtag + "</h2></div>" + "<h5>" + dat[i].description + "</h5>" + "</div>");
 	})
 })
 

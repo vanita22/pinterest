@@ -101,16 +101,18 @@ body{
 	}
 	.buscador{
 		width: 80%;
-		display: inline-block;		
+		display: inline-block;	
+		.search{
+			display: inline-flex;
+			background-color: #e7e7e7;
+			margin-left: 5%;
+			padding: 5.7px;
+		}	
 		input{
 			background-color: #e7e7e7;
-			color: #959595;
-			background-image: url(../img/search.png);
-			background-repeat: no-repeat;
-			background-size: 17px;
+			color: #959595;			
 			padding-left: 60px;
-			border-style: none;
-			margin-left: 5%;
+			border-style: none;			
 			width: 60%;
 			padding: 7px;
 			display: inline-block;
@@ -182,12 +184,15 @@ body{
 /*Botones pinteres*/
 
 .list-btn{
+	background-color: white;
 	display: inline-flex;
-	width: 95%;
+	width: 85%;
 	height: 6vh;
-	margin-top: 100px;	
-	border: 1px solid black;
-	button{
+	margin-top: 100px;
+	margin-left: 10%;	
+	padding: 4px;
+	overflow: hidden;/*los elementos pasan por debajo de la caja*/	
+	button{		
 		background-color: brown;
 		color: white;
 		font-size: 15px;
@@ -199,17 +204,34 @@ body{
 		margin-right: 10px;
 		box-shadow: 2px 2px 8px #000;
 		cursor: pointer;
-	}
+		animation-name: boton;
+		animation-duration: 25s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;	
+	}		
+	
+	@keyframes boton{
+  		0% {
+   			margin-left: 100%;    		
+  		}
+  		100% {
+    		margin-left: 0%;
+    	}    		
+  	}
 	button:hover{
 		transform: translateY(-3px);
+		animation-play-state: paused;
+	}
+	.right{
+		cursor: pointer;
 	}
 }
 
 /*imagenes pinteres*/
 .caja{
+	width: 100%;
 	margin-top: 80px;
-	display: inline-flex;
-	padding: 0px 100px;
+	display: inline-flex;	
 	position: relative;
 }
 
@@ -260,21 +282,6 @@ h2{
 	display: inline-block;
 	margin-left: 5px;
 	color: #959595;
-}
-
-.boton{
-	background-color: #e7e7e7;
-	color: white;
-	font-size: 13px;
-	font-weight: bold;
-	width: auto;
-	height: auto;
-	padding: 8px;
-	cursor: pointer;
-	border-radius: 5px;
-	display: inline-flex;
-	box-shadow: 2px 2px 8px #000;
-	margin-top: -20px;				
 }
 
 .box{
@@ -332,7 +339,7 @@ h2{
 	display: flex;
 	#modal-a{
 		background-color: white;
-		width: 300px;
+		width: 30%;
 		height: 85vh;
 		padding: 30px;
 		margin-top: 40px;
@@ -350,7 +357,7 @@ h2{
 			margin-bottom: 30px;
 			margin-top: 30px;
 			h5{
-				color: #e7e7e7;
+				color: #A19FA0;
 				font-size: 17px;
 				margin-right: 25%;
 				display: inline-flex;

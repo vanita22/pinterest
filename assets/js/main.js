@@ -30,18 +30,14 @@ $(document).ready(function(){
 	})
 
 	$(".close").click(function(){
-		$(".lista").hide(300);
+		$(".lista").hide(1000);
 	})
 
+		  
+    /*movimiento del los botones*/ 
 
-	  /*<button id="right">&raquo;</button>
-        <div class="block"></div>
- 
-        <script>
-        $("#right").click(function(){
-          $(".block").animate({"left": "+=1500px"}, "slow");
-        });
-        </script>*/
+       
+        
 
     /*FUNCIONAMIENTO DEL MODAL*/
 
